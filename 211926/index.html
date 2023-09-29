@@ -20,18 +20,18 @@
             "Content-Type": "application/json"
         });
 
-        // Создаем объект ответа
-        var response = new Response(jsonContent, {
-            status: 200,
-            headers: headers
-        });
+        // // Создаем объект ответа
+        // var response = new Response(jsonContent, {
+        //     status: 200,
+        //     headers: headers
+        // });
 
-        // Возвращаем ответ
-        self.addEventListener('fetch', function(event) {
-            event.respondWith(
-                Promise.resolve(response)
-            );
-        });
+        // // Возвращаем ответ
+        // self.addEventListener('fetch', function(event) {
+        //     event.respondWith(
+        //         Promise.resolve(response)
+        //     );
+        // });
     </script>
 </body>
 </html>
